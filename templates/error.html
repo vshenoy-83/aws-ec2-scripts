@@ -1,0 +1,24 @@
+{% extends 'home.html' %}
+
+{% block page_content %}
+<div class="row">
+  <div class="col-md-2">
+    <div class="pull-left">
+      <a href="{{url_for('index')}}"><img src='static/images/home.png' alt='Blasting Off' height="70" width="155"/></a>
+    </div>
+  </div>
+</div>
+<div class="row">
+</div>
+<div class="row">
+  <div class="col-md-8 col-md-offset-4">
+    <h1> Error......!!!!! </h1>
+    <p class='lead'><a href="{{ url_for('index') }}">Return to home page</a></p>
+  </div>
+</div>
+<div class="row-fluid">
+  <p>Vivekananda Shenoy Shruthi Kamath Girish Shenoy Rathnkakara Shenoy Mangala Shenoy</p>
+  </div>
+</div>  
+{% endblock page_content %}
+

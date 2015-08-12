@@ -1,0 +1,33 @@
+{% extends 'home.html' %}
+{% block navbartitle %} 
+	<a class="navbar-brand" href="{{ url_for('index',external=True) }}">HOME</a>
+{% endblock navbartitle %}
+
+{% block navbarleft %}
+<li><a href="{{url_for('one')}}">ONE</a></li>
+<li><a href="{{url_for('two')}}">TWO</a></li>
+<li><a href="{{url_for('three')}}">THREE</a></li>
+{% endblock navbarleft %}
+
+{% block navbarright %}
+<li><a href=#>LOGIN/LOGOUT</a></li>
+{% endblock navbarright %}
+
+{% block page_content %}
+<div class="row">
+  <div class="col-md-2">
+    <div class="pull-left">
+      <a href="{{url_for('index')}}"><img src='static/images/home.png' alt='Blasting Off' height="70" width="155"/></a>
+    </div>  
+  </div>
+ 	<div class="col-md-8">
+    <h1>AWS Project : Create AWS Instances</h1>
+  </div>
+</div>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h1>AWS Project : Create AWS Instances</h1>
+    </div>
+  </div>
+{% endblock page_content %}
+
